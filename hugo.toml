@@ -1,4 +1,33 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "hugo-book"
+title = 'Graham Smith'
+theme = "typo"
+
+[params]
+# Intro on main page, content is markdown
+homeIntroTitle = 'Welcome!'
+homeIntroContent = """
+Over the course of this summer (2024-5-20 to 2024-8-9), I'm attempting to combine the 
+powers of generative code (see my previous attempts [here](https://hedgy134117.github.io/sketches/)) with the physical medium of 3D printing.
+During this journey, I tried my best to document the process for others interested in this same niche concept.
+
+Thanks for visiting!
+"""
+
+# Collection to display on home
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'github'

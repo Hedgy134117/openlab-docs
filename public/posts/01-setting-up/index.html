@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  dir="ltr">
+
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width"><meta name="description" content="" />
+
+<title>
+    
+    Setting up this Website | Graham Smith
+    
+</title>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/assets/combined.min.f69b4a5b91a9bc416804eda1f19d04210551b843d47318bf1913d7edce1504fb.css" media="all">
+
+
+
+  </head>
+
+  
+
+  
+
+  <body class="auto">
+
+    <div class="content">
+      <header>
+        
+
+<div class="header">
+    <h1 class="header-title">Graham Smith</h1>
+
+    <div class="flex">
+        
+
+        
+        
+        <p class="small ">
+            <a href="/">
+                /home
+            </a>
+        </p>
+        
+        <p class="small ">
+            <a href="/posts">
+                /posts
+            </a>
+        </p>
+        
+        
+    </div>
+
+</div>
+      </header>
+
+      <main class="main">
+        
+
+
+
+
+
+<div >
+
+  <div class="single-intro-container">
+
+    
+
+    <h1 class="single-title">Setting up this Website</h1>
+    
+
+    
+
+    <p class="single-readtime">
+      
+      
+      
+      <time datetime="2024-06-11T00:00:00&#43;00:00">June 11, 2024</time>
+      
+
+      
+    </p>
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  <div class="single-content">
+    <h1 id="installing-hugo">Installing Hugo</h1>
+<p>This website runs on the static site generator <a href="https://gohugo.io/">Hugo</a> with the theme <a href="https://themes.gohugo.io/themes/typo/">Typo</a> by Francesco Tomaselli.</p>
+<p>To install Hugo, on windows, you can open the Windows Terminal and run <code>winget install Hugo.Hugo.Extended</code>. Instructions for other operating systems can be found <a href="https://gohugo.io/installation/">here</a>.</p>
+<h1 id="installing-git">Installing Git</h1>
+<p>In order to run Hugo, we also need to have git installed. This doesn&rsquo;t require a terminal and can be downloaded <a href="https://www.git-scm.com/downloads">here</a></p>
+<h1 id="create-a-new-site">Create a new site</h1>
+<p>Relaunch the terminal you used to install hugo and <code>cd</code> to the directory where you&rsquo;d like to have your site. For those unfamiliar with working in a terminal, we use <code>cd</code> to navigate through the filesystem. When you open the terminal, your default directory will be under whatever user you are running Windows under. For example, the user I&rsquo;m logged into to create this site is called &ldquo;Open Lab&rdquo;, therefore I see this when I open the terminal:
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div>
+        <img loading="lazy" alt="image" src=" images/console.png">
+    </div>
+
+    
+</figure></p>
+<p>To see all the folders in this directory, use <code>ls</code> to <em>list</em> all the files and folders:
+
+
+
+
+
+
+
+
+
+
+
+<figure class="">
+
+    <div>
+        <img loading="lazy" alt="image" src=" images/ls.png">
+    </div>
+
+    
+</figure></p>
+<p>Let&rsquo;s say I want to make the website in the Documents folder. First, I navigate in there using <code>cd</code>, and then I run the Hugo setup commands found <a href="https://gohugo.io/getting-started/quick-start/">here</a>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site quickstart
+</span></span><span style="display:flex;"><span><span style="color:#0086b3">cd</span> quickstart
+</span></span><span style="display:flex;"><span>git init
+</span></span></code></pre></div><p>Now the fun part, giving the site a theme! For this website, I&rsquo;m using the Typo theme (mentioned earlier). However, there is a long <a href="https://themes.gohugo.io/">list of themes</a> on Hugo&rsquo;s website, so feel free to browse there to find one you like instead.</p>
+<p>In order to assign a theme to our website, we just have to run a few more commands. Note that the first line installs the theme, and if you chose a different theme, please follow that theme&rsquo;s installation instructions.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git submodule add https://github.com/tomfran/typo.git themes/typo
+</span></span><span style="display:flex;"><span>notepad hugo.toml
+</span></span></code></pre></div><p>This should open up a file with notepad. We want to tell hugo to use the theme we just installed with the first command, so add the line <code>theme = &quot;typo&quot;</code> (replacing &ldquo;typo&rdquo; with whatever theme you installed if necessary) to the end of the file and then save and close the file.</p>
+<p>With one last command, <code>hugo server</code>, you should now have a running website! For more details on where to go next (and probably a better tutorial than this one), follow <a href="https://gohugo.io/documentation/">Hugo&rsquo;s documentation</a>.</p>
+
+    
+  </div>
+
+  
+  <div class="back-to-top">
+    <a href="#top">
+      back to top
+    </a>
+  </div>
+  
+
+</div>
+
+
+      </main>
+    </div>
+
+    <footer>
+      <p>Powered by
+    <a href="https://gohugo.io/">Hugo</a>
+    and
+    <a href="https://github.com/tomfran/typo">tomfran/typo</a>
+</p>
+
+
+    </footer>
+
+  </body>
+
+  <script>
+
+  function isAuto() {
+    return document.body.classList.contains("auto");
+  }
+
+  function setTheme() {
+    if (!isAuto()) {
+      return
+    }
+
+    document.body.classList.remove("auto");
+    let cls = "light";
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      cls = "dark";
+    }
+
+    document.body.classList.add(cls);
+  }
+
+  function invertBody() {
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+  }
+
+  if (isAuto()) {
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(invertBody);
+  }
+
+  setTheme();
+
+</script>
+
+</html>
