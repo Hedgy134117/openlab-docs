@@ -21,11 +21,11 @@ homeCollection = 'posts'
 # Main menu pages
 [[params.menu]]
 name = "home"
-url = ""
+url = "/openlab-docs/"
 
 [[params.menu]]
 name = "posts"
-url = "posts/"
+url = "/openlab-docs/posts/"
 
 # Syntax highligth on code blocks
 [markup]
