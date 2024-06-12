@@ -21,11 +21,11 @@ homeCollection = 'posts'
 # Main menu pages
 [[params.menu]]
 name = "home"
-url = "/"
+url = ""
 
 [[params.menu]]
 name = "posts"
-url = "/posts"
+url = "posts/"
 
 # Syntax highligth on code blocks
 [markup]
