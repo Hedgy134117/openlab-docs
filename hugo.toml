@@ -21,6 +21,9 @@ homeCollection = 'posts'
 # Pagination
 paginationSize = 100
 
+# Breadcrumbs
+breadcrumbs = true
+
 # Main menu pages
 [[params.menu]]
 name = "home"
