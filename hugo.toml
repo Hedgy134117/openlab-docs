@@ -18,6 +18,9 @@ Thanks for visiting!
 homeCollectionTitle = 'Posts'
 homeCollection = 'posts'
 
+# Pagination
+paginationSize = 100
+
 # Main menu pages
 [[params.menu]]
 name = "home"
@@ -26,6 +29,10 @@ url = "/openlab-docs/"
 [[params.menu]]
 name = "posts"
 url = "/openlab-docs/posts/"
+
+[[params.menu]]
+name = "failure-logs"
+url = "/openlab-docs/failure-logs/"
 
 # Syntax highligth on code blocks
 [markup]
