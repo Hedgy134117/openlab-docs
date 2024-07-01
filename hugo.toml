@@ -15,8 +15,8 @@ Thanks for visiting!
 """
 
 # Collection to display on home
-homeCollectionTitle = 'Posts'
-homeCollection = 'posts'
+homeCollectionTitle = 'Failure Logs'
+homeCollection = 'failure-logs'
 
 # Pagination
 paginationSize = 100
